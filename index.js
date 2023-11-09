@@ -110,7 +110,7 @@ class Select2 extends Component {
                 </Text>
                 <Icon style={styles.itemIcon}
                     name={item.checked ? 'check-circle-outline' : 'radiobox-blank'}
-                    color={item.checked ? colorTheme : '#777777'} size={20} />
+                    color={item.checked ? colorTheme : '#C7C7C7'} size={20} />
             </TouchableOpacity>
         );
     }
@@ -220,7 +220,7 @@ class Select2 extends Component {
                     preSelectedItem.length > 0
                         ? (
                             isSelectSingle
-                                ? <Text style={[styles.selectedTitlte, this.defaultFont, selectedTitleStyle, { color: '#333' }]}>{preSelectedItem[0].name}</Text>
+                                ? <Text style={[styles.selectedTitlte, this.defaultFont, selectedTitleStyle, { color: '#C7C7C7' }]}>{preSelectedItem[0].name}</Text>
                                 : <View style={styles.tagWrapper}>
                                     {
                                         preSelectedItem.map((tag, index) => {
