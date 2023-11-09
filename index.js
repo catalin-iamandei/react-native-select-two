@@ -105,12 +105,12 @@ class Select2 extends Component {
                 onPress={() => this.onItemSelected(item, isSelectSingle)}
                 activeOpacity={0.7}
                 style={styles.itemWrapper}>
-                <Text style={[styles.itemText, this.defaultFont]}>
+                <Text style={[styles.itemText, this.defaultFont, {color: item.checked ? colorTheme : '#333'}]}>
                     {item.name}
                 </Text>
-                <Icon style={styles.itemIcon}
-                    name={item.checked ? 'check-circle-outline' : 'radiobox-blank'}
-                    color={item.checked ? colorTheme : '#C7C7C7'} size={20} />
+                {/*<Icon style={styles.itemIcon}*/}
+                {/*    name={item.checked ? 'check-circle-outline' : 'radiobox-blank'}*/}
+                {/*    color={item.checked ? colorTheme : '#C7C7C7'} size={20} />*/}
             </TouchableOpacity>
         );
     }
